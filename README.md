@@ -1,7 +1,9 @@
 # toeplitz
 
-- This package is originally from [toeplitz](https://github.com/trichter/toeplitz)  
-Function ccg and cccg was removed from original package since it throw error while building.  
+- This package is originally from [toeplitz](https://github.com/trichter/toeplitz) by Trichter.  
+
+
+Function ccg and cccg was removed from original package since it throws error while building.  
 For using the package [blockmatrix](https://github.com/jsosulski/blockmatrix), toeplitzlda.ctg_sl() is only required. Which means, these functions are not required for running [blockmatrix](https://github.com/jsosulski/blockmatrix) and [toeplitzlda](https://github.com/jsosulski/toeplitzlda).
 
 # Requirment
