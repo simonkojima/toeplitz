@@ -1,7 +1,9 @@
 toeplitz
 ========
 
-# remove function ccg and cccg since it throw error while building.
+This is originally from https://github.com/trichter/toeplitz Function ccg and cccg was removed from original package since it throw error while building.
+-----------------------------------------------------------------
+
 
 Python wrapper for Fortran90 toeplitz package to solve a variety of Toeplitz and circulant linear systems
 ---------------------------------------------------------------------------------------------------------
