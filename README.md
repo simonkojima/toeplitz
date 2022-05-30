@@ -8,13 +8,11 @@ For using the package [blockmatrix](https://github.com/jsosulski/blockmatrix), t
 numpy is required.
 
 # Installation
-You can install package with following commands.  
+You can install package with following commands. (on ubuntu)
 
 ```
-- on ubuntu 
 sudo apt install gfortran
 python setup.py install
-
 ```
 
 If it's failed, following commands may help fixing. (only on anaconda)
