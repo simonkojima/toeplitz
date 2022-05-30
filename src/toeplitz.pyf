@@ -30,15 +30,6 @@ python module toeplitz ! in
             integer(kind=4), intent(hide),depend(x) :: k=shape(x,2)
             integer(kind=4), intent(hide),depend(a,) :: lda=shape(a,0)
         end subroutine cccc_sl
-        subroutine cccg_sl(a,x,r,m,l,k,lda) ! in :_toeplitz:toeplitz.f90
-            complex(kind=4) dimension(m*m,k),depend(m,k) :: a
-            complex(kind=4) dimension(m,l,k),intent(in,out) :: x
-            complex(kind=4) intent(hide),dimension(max3(m,2*l,2*k)),depend(m,l,k) :: r
-            integer(kind=4), intent(hide),depend(x) :: m=shape(x,0)
-            integer(kind=4), intent(hide),depend(x) :: l=shape(x,1)
-            integer(kind=4), intent(hide),depend(x) :: k=shape(x,2)
-            integer(kind=4), intent(hide),depend(a) :: lda=shape(a,0)
-        end subroutine cccg_sl
         subroutine ccc_sl(a,x,r,m,l,lda) ! in :_toeplitz:toeplitz.f90
             complex(kind=4) dimension(m,l),depend(m,l) :: a
             complex(kind=4) dimension(m,l),intent(in,out) :: x
@@ -56,14 +47,6 @@ python module toeplitz ! in
             integer(kind=4), intent(hide),depend(x) :: k=shape(x,2)
             integer(kind=4), intent(hide),depend(a) :: lda=shape(a,0)
         end subroutine ccct_sl
-        subroutine ccg_sl(a,x,r,m,l,lda) ! in :_toeplitz:toeplitz.f90
-            complex(kind=4) dimension(m*m,l),depend(m,l) :: a
-            complex(kind=4) dimension(m,l),intent(in,out) :: x
-            complex(kind=4) intent(hide),dimension(max(m,2*l)),depend(m,l) :: r
-            integer(kind=4), intent(hide),depend(x) :: m=shape(x,0)
-            integer(kind=4), intent(hide),depend(x) :: l=shape(x,1)
-            integer(kind=4), intent(hide),depend(a) :: lda=shape(a,0)
-        end subroutine ccg_sl
         subroutine cci_sl(m,a,x) ! in :_toeplitz:toeplitz.f90
             integer(kind=4), intent(hide),depend(a) :: m=len(a)
             complex(kind=4) dimension(m) :: a
