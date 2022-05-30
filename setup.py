@@ -3,7 +3,7 @@ from numpy.distutils.core import Extension, setup
 
 VERSION = '0.3.3-dev'
 
-with open('README.rst') as f:
+with open('README.md') as f:
     README = f.read()
 DESCRIPTION = README.split('\n')[2]
 LONG_DESCRIPTION = '\n'.join(README.split('\n')[17:])
@@ -28,10 +28,10 @@ setup(name='toeplitz',
       version=VERSION,
       description=DESCRIPTION,
       long_description=LONG_DESCRIPTION,
-      author='Tom Eulenfeld',
-      author_email='tom.eulenfeld@gmail.com',
+      author='Simon Kojima',
+      author_email='simon.kojima@outlook',
       license='MIT',
-      url='https://github.com/trichter/toeplitz',
+      url='https://github.com/simonkojima/toeplitz.git',
       classifiers=CLASSIFIERS,
       ext_modules=[EXT],
       scripts=['scripts/toeplitz-runtests'],
