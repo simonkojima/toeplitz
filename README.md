@@ -4,7 +4,7 @@
 
 
 Function ccg and cccg was removed from original package since it throws error while building.  
-For using the package [blockmatrix](https://github.com/jsosulski/blockmatrix), toeplitzlda.ctg_sl() is only required. Which means, these functions are not required for running [blockmatrix](https://github.com/jsosulski/blockmatrix) and [toeplitzlda](https://github.com/jsosulski/toeplitzlda).
+For using the package [blockmatrix](https://github.com/jsosulski/blockmatrix), toeplitzlda.ctg_sl() is only required. Thus, removed functions are not required for running [blockmatrix](https://github.com/jsosulski/blockmatrix) and [toeplitzlda](https://github.com/jsosulski/toeplitzlda).
 
 # Requirment
 numpy is required.
