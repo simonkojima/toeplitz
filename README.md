@@ -11,6 +11,13 @@ numpy is required.
 You can install package with following commands.  
 
 ```
-conda fortran-compiler
+- anaconda
+
+conda install -c conda-forge fortran-compiler
 python setup.py install
+
+- pip on ubuntu 
+sudo apt install gfortran
+python setup.py install
+
 ```
